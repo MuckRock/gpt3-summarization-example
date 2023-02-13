@@ -60,7 +60,7 @@ class GPTPlay(AddOn):
         with open("compared_docs.csv", "w+") as file_:
             writer = csv.writer(file_)
             writer.writerow(["document_title", "url", "output"])
-            user_input = self.data["prompt"].translate(ESCAPE_TABLE)
+            prompt = "Rewrite the following abstract to avoid heavy scientific jargon and use simpler vocabulary: "
             gpt_model = self.data.get("model", "text-davinci-003")
             for document in self.get_documents():
                 self.set_message(f"Analyzing document {document.title}.")
@@ -68,15 +68,15 @@ class GPTPlay(AddOn):
                     # Just starting with page one for now due to API limits.
                     full_text = document.full_text.translate(ESCAPE_TABLE)[:12000] # Limiting to first 10000 characters from entire document
                     submission = (
-                        f"Assignment:\n=============\n{user_input}\n\n"
+                        f"{prompt}\n\n"
                         f"Document Text:\n=========\n{full_text}\n\n\n"
-                        "Answer:\n==========\n"
+                        "Summary:\n==========\n"
                         )
                     response = openai.Completion.create(
                         model=gpt_model,
                         prompt=submission,
-                        temperature=0.7,
-                        max_tokens=1000,
+                        temperature=0.0,
+                        max_tokens=4000,
                         top_p=1,
                         frequency_penalty=0,
                         presence_penalty=0,
