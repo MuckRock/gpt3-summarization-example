@@ -21,13 +21,4 @@ type: object
 documents:
   - query
   - selected
-properties:
-  prompt:
-    title: Give a GPT-3 style prompt
-    type: string
-  value:
-    title: Put a tag here if you'd like to save the results as a key value pair on the document.
-    type: string
 
-required:
-  - prompt
