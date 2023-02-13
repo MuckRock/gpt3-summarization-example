@@ -75,7 +75,7 @@ class GPTPlay(AddOn):
                     response = openai.Completion.create(
                         model=gpt_model,
                         prompt=submission,
-                        temperature=0.0,
+                        temperature=0.7,
                         max_tokens=4000,
                         top_p=1,
                         frequency_penalty=0,
