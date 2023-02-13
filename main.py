@@ -60,7 +60,7 @@ class GPTPlay(AddOn):
         with open("compared_docs.csv", "w+") as file_:
             writer = csv.writer(file_)
             writer.writerow(["document_title", "url", "output"])
-            prompt = "Rewrite the following abstract to avoid heavy scientific jargon and use simpler vocabulary: "
+            prompt = "Summarize what is journalistically newsworthy about the following proposed bill: "
             gpt_model = self.data.get("model", "text-davinci-003")
             for document in self.get_documents():
                 self.set_message(f"Analyzing document {document.title}.")
