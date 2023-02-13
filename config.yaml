@@ -25,4 +25,9 @@ documents:
   - selected
 # Properties are the fields for your form
 properties:
-required:
+  # the key is the name of the variable that will be returned to your code
+  name:
+    # the title is what will be shown as the form label
+    title: Test
+    # a string is text
+    type: string
