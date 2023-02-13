@@ -61,7 +61,7 @@ class GPTPlay(AddOn):
             writer = csv.writer(file_)
             writer.writerow(["document_title", "url", "output"])
             prompt = "Summarize what is journalistically newsworthy about the following proposed bill: "
-            gpt_model = self.data.get("model", "text-davinci-003")
+            gpt_model = "text-davinci-003"
             for document in self.get_documents():
                 self.set_message(f"Analyzing document {document.title}.")
                 try:
