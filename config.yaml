@@ -2,12 +2,14 @@
 title: "Diakopoulos GPT-3 Example: Summarizing Legislative Bills"
 # The description will be shown above the form when activating the Add-On
 description: >-
-  An implementation of the example [using GPT-3 to summarize proposed legislation, described by Nick Diakopoulos](https://colab.research.google.com/drive/1rr0dxKpwK5zjch1V4eKjwwyVW-AzuDTw#scrollTo=zI4zN4RMg8yq). Use with care as it may introduce factual errors, hallucinations, and other artifacts in summaries.
+  An implementation of the example [using GPT-3 to summarize proposed legislation,
+  described by Nick Diakopoulos](https://colab.research.google.com/drive/1rr0dxKpwK5zjch1V4eKjwwyVW-AzuDTw#scrollTo=zI4zN4RMg8yq).
+  Use with care as it may introduce factual errors, hallucinations, and other artifacts in summaries.
   
   
   Note that this plugin uses *1 credit per 450 documents analyzed*, rounded up.
   Give this a full prompt that you would pass into GPT-3 and it will run it
-  against your selected documents, one at a time. The Add-On only looks at the 10,000 characters of a document. 
+  against your selected documents, one at a time. The Add-On only looks at the 12,000 characters of a document. 
   The prompt refers to the user input as the "Assignment," the document's text
   as "Document Text", and GPT-3's generated response as the "Answer," which can
   be helpful when defining your prompt.
