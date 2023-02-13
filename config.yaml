@@ -1,4 +1,4 @@
-title: GPT-3 Playground (Alpha)
+title: GPT-3 Rewriting Scientific Abstract Example
 description: >-
   An implementation of the example [de-jargonizing GPT-3 application described by Nick Diakopoulos](https://colab.research.google.com/drive/1rr0dxKpwK5zjch1V4eKjwwyVW-AzuDTw#scrollTo=zI4zN4RMg8yq). Use with care as it may introduce factual errors, hallucinations, and other artifacts in summaries.
   
