@@ -1,8 +1,8 @@
 # The title is the title of your Add-On
-title: GPT-3 Rewriting Scientific Abstract Example
+title: Diakopoulos GPT-3 Example: Summarizing Legislative Bills
 # The description will be shown above the form when activating the Add-On
 description: >-
-  An implementation of the example [de-jargonizing GPT-3 application described by Nick Diakopoulos](https://colab.research.google.com/drive/1rr0dxKpwK5zjch1V4eKjwwyVW-AzuDTw#scrollTo=zI4zN4RMg8yq). Use with care as it may introduce factual errors, hallucinations, and other artifacts in summaries.
+  An implementation of the example [using GPT-3 to summarize proposed legislation, described by Nick Diakopoulos](https://colab.research.google.com/drive/1rr0dxKpwK5zjch1V4eKjwwyVW-AzuDTw#scrollTo=zI4zN4RMg8yq). Use with care as it may introduce factual errors, hallucinations, and other artifacts in summaries.
   
   
   Note that this plugin uses *1 credit per 450 documents analyzed*, rounded up.
