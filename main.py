@@ -84,6 +84,7 @@ class GPTPlay(AddOn):
                     results = response.choices[0].text
                     writer.writerow([document.title, document.canonical_url, results])
                 except:
+                    raise
                     print("Error, moving on to the next item.")
 
             self.upload_file(file_)
