@@ -83,12 +83,12 @@ class GPTPlay(AddOn):
                     )
                     results = response.choices[0].text
                     writer.writerow([document.title, document.canonical_url, results])
-                    if self.data.get("value"):
-                        try:  # should add a proper permission check here.
-                            document.data[self.data["value"]] = [str(results)]
-                            document.save()
-                        except:
-                            print("Saving the value did not work")
+ #                   if self.data.get("value"): # Values don't make sense in this application.
+ #                       try:  # should add a proper permission check here.
+ #                           #document.data[self.data["value"]] = [str(results)]
+ #                           document.save()
+ #                       except:
+ #                           print("Saving the value did not work")
                 except:
                     print("Error, moving on to the next item.")
 
