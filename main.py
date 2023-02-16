@@ -60,7 +60,7 @@ class GPTPlay(AddOn):
         with open("compared_docs.csv", "w+") as file_:
             writer = csv.writer(file_)
             writer.writerow(["document_title", "url", "output"])
-            prompt = "Summarize what is journalistically newsworthy about the following proposed bill: "
+            prompt = "Summarize the following document in a brief sentence, including what kind of document it appears to be, such as an email, memo, police report, or budget. "
             gpt_model = "text-davinci-003"
             for document in self.get_documents():
                 self.set_message(f"Analyzing document {document.title}.")
