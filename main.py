@@ -66,7 +66,7 @@ class GPTPlay(AddOn):
                 self.set_message(f"Analyzing document {document.title}.")
                 try:
                     # Limiting to first 12000 characters from entire document
-                    full_text = document.full_text.translate(ESCAPE_TABLE)[:12000] 
+                    full_text = document.full_text.translate(ESCAPE_TABLE)[:6000] 
                     submission = (
                         f"{prompt}\n\n"
                         f"Document Text:\n=========\n{full_text}\n\n\n"
