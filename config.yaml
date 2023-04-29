@@ -7,7 +7,7 @@ description: >-
   Use with care as it may introduce factual errors, hallucinations, and other artifacts in summaries.
   
   
-  Note that this plugin uses *1 credit per 450 documents analyzed*, rounded up.
+  Note that this plugin uses *14 credit per document analyzed*, rounded up.
   Give this a full prompt that you would pass into GPT-3 and it will run it
   against your selected documents, one at a time. The Add-On only looks at the 12,000 characters of a document. 
   The prompt refers to the user input as the "Assignment," the document's text
