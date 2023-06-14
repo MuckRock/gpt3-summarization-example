@@ -28,3 +28,6 @@ documents:
   - selected
 # Properties are the fields for your form
 properties: {}
+categories:
+  - ai
+  - premium
